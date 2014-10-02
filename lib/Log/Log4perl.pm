@@ -407,7 +407,7 @@ sub caller_depth_offset {
         if(defined $category and
            exists $WRAPPERS_REGISTERED{ $category }) {
             $level++;
-            redo;
+            redo;#without marks
         }
     }
 
